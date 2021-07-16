@@ -41,7 +41,10 @@ def get_variable_value(df,var):
     return df.loc[arg_var,'Code']
 
 def get_event_results(file,event_code_list,sub_code,tp):   
-    """  """
+    """ Return results, updated for each event, present in a given file,
+    based on a given list of events codes. Results is a dictionary with
+    time point linked to nested sub-dictionary. In sub-dictionary, there is
+    created variable 'Kod OB', linked to given subject code."""
     #create placeholder-directory linked to each time point, with
     #subject code as starting variable (which later is appended to Data Frame)
     #get names of files in a given sub-directory
